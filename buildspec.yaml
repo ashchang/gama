@@ -26,5 +26,4 @@ phases:
       - docker push "doctorash/gamania"
       - ls
       - pwd
-      - cat .kube/config
       - helm upgrade --install nginx ./helm -f helm/values.yaml
