@@ -14,7 +14,7 @@ phases:
   pre_build:
     commands:
       - docker login --username=$USER --password=$PASS
-      - aws eks update-kubeconfig --name YOUR_CLUSTER_NAME --region YOUR_REGION
+      - aws eks update-kubeconfig --name $CLUSTER_NAME --region $REGION
   build:
     commands:
       - echo Build started on `date`
