@@ -24,5 +24,4 @@ phases:
   post_build:
     commands:
       - docker push "doctorash/gamania"
-      - kubectl get svc
       - helm upgrade --install nginx ./helm -f helm/values.yaml
